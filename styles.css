@@ -1,0 +1,129 @@
+h1, h2 {
+    /* background-color: rgb(153, 151, 151);
+    margin-left: 32%;
+    margin-right: 32%; */
+    color: blue;
+    text-align: center;
+    animation: bounceIn 4s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+p {
+    background-color: rgb(60, 186, 60);
+}
+
+body {
+    background-color: beige;
+    background-image: url(https://c1.wallpaperflare.com/preview/236/137/184/background-treasure-map-map-discover.jpg);
+    background-position: center;
+    background-size: cover
+}
+
+#top {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+  }
+
+.line {
+    background-color: beige;
+    margin-left: 32%;
+    margin-right: 32%;
+    opacity: 0.6;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.emoji {
+    /* font-weight: bolder; */
+    text-decoration: underline;
+}
+
+#box {
+border-width: 4px;
+border-style: solid;
+border-color: aquamarine;
+display: inline-block;
+justify-content: center;
+align-items: center;
+}
+
+#reward {
+    display: flex;
+    justify-content: center;
+}
+
+td {
+    display: inline-flex;
+    justify-content: center;
+    height: 150px;
+    width: 150px;
+    font-size: 100px;
+    border: 2px solid black;
+}
+
+/* universal selector */
+* {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bolder;
+    text-shadow: rgb(153, 151, 151);
+    
+}
+
+button {
+    background-color: gold;
+    display: block;
+    padding: 0.5%;
+    margin: 0.5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+}   
+
+footer {
+    background-color: beige;
+    text-align: center;
+    margin-left: 32%;
+    margin-right: 32%;
+}
+
+img {
+    animation: shake 1.5s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+  @keyframes bounceIn{
+    0%{
+      transform: scaleX(0.5);
+      opacity: 0;
+    }
+    60%{
+      transform: scaleX(1);
+      opacity: 1;
+    }
+    100%{
+      transform: scaleX(0.8);
+    }
+  }
+  
+  

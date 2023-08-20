@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treasure Hunt Game</title>
+    <link rel ="stylesheet" href="styles.css"
+    <link rel ="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Treasure Hunt Game</h1>
+    <img id="top" src="https://www.freepnglogos.com/uploads/treasure-chest-png/treasure-chest-download-treasure-png-transparent-image-and-clipart-18.png" alt="all the treasure" height="200px">
+
+    <h2>Rules of engagement</h2>
+    <div class="line">
+      <ul>
+          <li>Understand each box 
+            can contain one of three items</li>
+          <ol>
+              <li class="emoji">A tree 🌴</li>
+              <li class="emoji">A bomb 💣</li>
+              <li class="emoji">Jimmy's valuable treasure 🌈</li>
+          </ol>
+          <li>If you get a tree.. atleast you walk away with something</li>
+          <li>If you click the treasure you win!!</li>
+          <li>However, if you click the bomb you lose miserably!</li>
+      </ul> 
+    </div>
+    <div id="reward">
+        <!-- for lines 34 to 46 we had our numbers in a string '' which cause us
+        to show the string instead of the assigned picture -->
+        <table border="1px" id="box">
+            <tr>
+                <td id="0" onclick="changeToEmoji(0)">?</td>
+                <td id="1" onclick="changeToEmoji(1)">?</td>
+                <td id="2" onclick="changeToEmoji(2)">?</td>    
+            </tr>
+            <tr>
+                <td id="3" onclick="changeToEmoji(3)">?</td>
+                <td id="4" onclick="changeToEmoji(4)">?</td>
+                <td id="5" onclick="changeToEmoji(5)">?</td>
+              </tr>
+              <tr>
+                <td id="6" onclick="changeToEmoji(6)">?</td>
+                <td id="7" onclick="changeToEmoji(7)">?</td>
+                <td id="8" onclick="changeToEmoji(8)">?</td>
+              </tr>
+        </table>
+    </div>
+    <button id="button1" type="button" onClick="window.location.reload();">Restart Game</button>
+    <footer>&copy; Jackson, Mike & Sam</footer>
+    <script type="text/javascript" src="treasurehunt.js"></script>
+</body>
+</html>
